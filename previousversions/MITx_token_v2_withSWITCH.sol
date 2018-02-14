@@ -425,6 +425,19 @@ contract MITx_TokenSale is Ownable {
     cs = newCS;
   }
 
+   /**
+  * @dev set a freeForAll to true ( in case you leave to anybody to send ethers)
+  */
+  function switchONfreeForAll() onlyCSorOwner public {
+    freeForAll = true;
+  }
+   /**
+  * @dev set a freeForAll to false ( in case you need to authorise the acconts)
+  */
+  function switchOFFfreeForAll() onlyCSorOwner public {
+    freeForAll = false;
+  }
+
   function placeTokens(address beneficiary, uint256 _tokens) onlyCS public {
     //check minimum and maximum amount
     require(_tokens != 0);
