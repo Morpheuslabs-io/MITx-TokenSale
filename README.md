@@ -12,7 +12,8 @@ Opening time:
 
 * min purchase depends on the tiers ( till the tier1Tomestamp is 1 ether, other is 0,001 ether)
 * max purchase is  1000000 ether;
-* no pre-authorised ( CS can switch ON/OFF the authorisation)
+* no pre-authorised 
+é.( CS can switch ON/OFF the authorisation call the `switchONfreeForAll()` / `switchOFFfreeForAll()`)
 
 ## Private Sale (placeTokens)
 
@@ -24,6 +25,8 @@ Opening time:
 
 * by CS user 
 * can approve or block
+* call `authoriseAccount()` / `authoriseManyAccounts()` / `blockAccount()`
+
 
 ##  Rate depends on the time
  1. 0% bonus , 1 Ether = 8000 MITx - CS can send the bonus by manually 
@@ -35,11 +38,11 @@ Opening time:
 
 ## Finishing the sale (owner) - passes control of token back to the owner
 
-* call finishSale 
+* call `finishSale()` 
 
 ## Starting Trading
 
-* call startTrading on the TOKEN
+* call `startTrading()` on the TOKEN-contract
 
 
 
