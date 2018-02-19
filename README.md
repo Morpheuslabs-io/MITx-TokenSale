@@ -1,7 +1,5 @@
 # MITx-TokenSale
 
-# MOO-Tokensale
-
 Opening time:
  
     startTimestamp = 1518453797; // 1518453797 converts to Tuesday February 13, 2018 00:43:17 (am) in time zone Asia/Singapore (+08)
@@ -14,7 +12,7 @@ Opening time:
 
 * min purchase depends on the tiers ( till the tier1Tomestamp is 1 ether, other is 0,001 ether)
 * max purchase is  1000000 ether;
-* pre-authorised
+* no pre-authorised ( CS can switch ON/OFF the authorisation)
 
 ## Private Sale (placeTokens)
 
@@ -28,7 +26,7 @@ Opening time:
 * can approve or block
 
 ##  Rate depends on the time
- 1. 50% bonus , 1 Ether = 12000 MITx
+ 1. 0% bonus , 1 Ether = 8000 MITx - CS can send the bonus by manually 
  2. 35% bonus , 1 Ether = 10800 MITx
  3. 20% bonus , 1 Ether = 9600 MITx
  4. 0% bonus , 1 Ether = 8000 MITx
